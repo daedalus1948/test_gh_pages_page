@@ -27,24 +27,23 @@
                 background-color: var(--color-1);
                 display: flex;
                 flex-direction: column;
-                width: 100vw;
                 height: 100svh;
             }
 
             .header {
                 background-color: var(--color-1);
                 display: flex;
-                border-bottom: 0.1rem solid var(--color-2);
             }
 
             .header-nav {
                 display: flex;
                 flex: 1;
                 justify-content: flex-end;
+                background-color: var(--color-3);
             }
 
             .header-button {
-                background-color: var(--color-1);
+                background-color: var(--color-3);
                 display: flex;
                 text-align: center;
                 align-items: center;
@@ -84,14 +83,13 @@
                 flex-direction: column;
                 align-items: center;
                 flex:1;
+                overflow: auto;
             }
 
             .content-nav {
                 padding: 0.5rem;
-                margin: 0.2rem;
                 display: flex;
                 justify-content: center;
-
             }
 
             .content-nav-item {
@@ -159,6 +157,10 @@
 
                 .image {
                     flex:1;
+                }
+
+                .content-main {
+                    overflow: visible;
                 }
 
                 .content-body {
