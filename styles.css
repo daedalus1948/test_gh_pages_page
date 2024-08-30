@@ -27,10 +27,6 @@ a {
     height: 100svh;
 }
 
-.active {
-    background-color: var(--color-2);
-}
-
 .header {
     background-color: var(--color-3);
     display: flex;
@@ -56,6 +52,19 @@ a {
     margin: 0.5rem;
     cursor: pointer;
 }
+
+.header-button-active {
+    color: var(--color-1);
+    background-color: var(--color-2);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
 
 .header-button:hover {
     background-color: var(--color-2);
@@ -105,8 +114,9 @@ a {
 
 .content-index-left {
     background-color: var(--color-2);
+    margin: 0.5rem;
     width: 60%;
-    height: 100%;
+    height: 95%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -133,39 +143,20 @@ a {
     text-align: justify;
 }
 
-.content-services-body {
-    background-color: var(--color-3);
-    padding: 0.5rem;
-    margin: 0.2rem;
-    width: 60%;
-    flex:1;
-}
-
 .content-services-nav {
     padding: 0.5rem;
     display: flex;
     justify-content: center;
 }
 
-.content-services-nav-item {
-    background-color: var(--color-2);
-    color: var(--color-1);
-    padding: 1rem;
-    margin: 0.5rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-}
-
-.content-news-nav {
+.content-services-body {
+    background-color: var(--color-3);
     padding: 0.5rem;
-    display: flex;
-    justify-content: center;
+    width: 60%;
+    flex:1;
 }
 
-.content-news-nav-item {
+.content-services-nav-item {
     background-color: var(--color-2);
     color: var(--color-1);
     padding: 1rem;
@@ -186,10 +177,28 @@ a {
     text-align: justify;
 }
 
+.content-news-nav {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+
 .content-news-body {
     background-color: var(--color-1);
     width: 60%;
     flex:1;
+}
+
+.content-news-nav-item {
+    background-color: var(--color-2);
+    color: var(--color-1);
+    padding: 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
 .content-news-item {
@@ -198,8 +207,6 @@ a {
     margin: 0.5rem;
     flex:1;
 }
-
-
 
 .content-services-heading {
     padding-top: 1rem;
@@ -244,6 +251,13 @@ a {
         font-size: 0.8rem;
     }
 
+    .header-button-active {
+        flex: 1;
+        padding: 0.4rem;
+        margin: 0.2rem;
+        font-size: 0.8rem;
+    }
+
     .header-image {
         justify-content: center;
     }
@@ -273,6 +287,21 @@ a {
     }
 
     .content-services-nav-item {
+        font-size: 0.75rem;
+        padding: 0.7rem;
+        margin: 0.2rem;
+    }
+
+    .content-news-body {
+        width: 80%;
+        font-size: 0.8rem;
+    }
+
+    .content-news-nav{
+        flex-direction: column;
+    }
+
+    .content-news-nav-item {
         font-size: 0.75rem;
         padding: 0.7rem;
         margin: 0.2rem;
