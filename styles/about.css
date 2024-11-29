@@ -1,0 +1,82 @@
+.content-about {
+    background-image: linear-gradient(to bottom right, var(--color-1) 25%, var(--color-2) 100%);
+    /* background-image: url("../assets/biz3.png"); */
+    background-repeat: no-repeat; /* Options: repeat, repeat-x, repeat-y, no-repeat */
+    background-position: top; /* Options: left, right, top, bottom, center */
+    background-size: cover; /* Options: cover, contain, auto, or specific dimensions */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex:1;
+}
+
+.content-about-left {
+    margin: 0.5rem;
+    width: 60%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-1);
+}
+
+.content-about-right {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0.5rem;
+}
+
+.content-about-item-body-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.25rem;
+}
+
+.content-about-nav-item {
+    background-color: var(--color-3);
+    color: var(--color-2);
+    padding: 1rem;
+    margin: 1rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content:start;
+    width: 60%;
+}
+
+
+.content-about-nav-item-heading {
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.content-about-nav-item-body {
+    text-align: justify;
+}
+
+@media (max-width: 1000px) {
+    .content-about-nav-item {
+        color: var(--color-2);
+        font-size: 0.75rem;
+        width: 100%;
+        margin: 0.5rem;
+    }
+
+    .content-about-item-body-logo {
+        width: 3rem;
+        padding: 0rem;
+    }
+
+    .content-about-item-body-logo-image {
+        transform: scale(0.5);
+        transform-origin: center;
+    }
+}

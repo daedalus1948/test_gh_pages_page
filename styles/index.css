@@ -1,0 +1,74 @@
+.content-index {
+    background-image: linear-gradient(to bottom right, var(--color-1) 25%, var(--color-2) 100%);
+    /* background-image: url("../assets/biz1.png"); */
+    background-repeat: no-repeat; /* Options: repeat, repeat-x, repeat-y, no-repeat */
+    background-position: top; /* Options: left, right, top, bottom, center */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex:1;
+    overflow: auto;
+    text-align: justify;
+}
+
+.content-index-nav-item {
+    background-color: var(--color-3);
+    color: var(--color-2);
+    padding: 1rem;
+    margin: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content:start;
+    width: 20rem;
+    height: 10rem;
+}
+
+.content-index-left {
+    width: 60%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-1);
+}
+
+.content-index-right {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-index-item-body-logo {
+    transform: scale(0.8);
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.25rem;
+}
+
+@media (max-width: 1000px) {
+    .content-index-nav-item {
+        color: var(--color-2);
+        font-size: 0.75rem;
+        height: 6rem;
+        width: 8rem;
+        margin: 0.5rem;
+    }
+
+    .content-index-item-body-logo {
+        width: 3rem;
+        padding: 0rem;
+    }
+
+    .content-index-item-body-logo-image {
+        transform: scale(0.5);
+        transform-origin: center;
+    }
+}

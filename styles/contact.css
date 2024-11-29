@@ -1,0 +1,74 @@
+.content-contact {
+    background-image: linear-gradient(to bottom right, var(--color-1) 25%, var(--color-2) 100%);
+    /* background-image: url("../assets/biz2.png"); */
+    background-repeat: no-repeat; /* Options: repeat, repeat-x, repeat-y, no-repeat */
+    background-position: top; /* Options: left, right, top, bottom, center */
+    background-size: cover; /* Options: cover, contain, auto, or specific dimensions */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex:1;
+    overflow: auto;
+    text-align: justify;
+}
+
+.content-contact-nav-item {
+    background-color: var(--color-3);
+    color: var(--color-2);
+    padding: 1rem;
+    margin: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content:start;
+    width: 20rem;
+    height: 10rem;
+}
+
+.content-contact-left {
+    margin: 0.5rem;
+    width: 60%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-1);
+}
+
+.content-contact-right {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-contact-item-body-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.25rem;
+}
+
+@media (max-width: 1000px) {
+    .content-contact-nav-item {
+        color: var(--color-2);
+        font-size: 0.75rem;
+        height: 6rem;
+        width: 8rem;
+        margin: 0.5rem;
+    }
+
+    .content-contact-item-body-logo {
+        width: 3rem;
+        padding: 0rem;
+    }
+
+    .content-contact-item-body-logo-image {
+        transform: scale(0.5);
+        transform-origin: center;
+    }
+}
